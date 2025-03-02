@@ -1,5 +1,11 @@
+@font-face {
+  font-family: 'Neirizi';
+  src: local('Neirizi'), url(./fonts/Neirizi.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  direction: rtl;
+  font-family: "Neirizi";
 }
