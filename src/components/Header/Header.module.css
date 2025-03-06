@@ -3,11 +3,15 @@
     src: local('Neirizi'), url(./fonts/Neirizi.ttf) format('truetype');
   }
 .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
 
-.topSection {
+.rightSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +51,7 @@
     letter-spacing: 1px;
 }
 
-.bottomSection {
+.leftSection {
     display: flex;
     justify-content: space-between;
     align-items: center;
