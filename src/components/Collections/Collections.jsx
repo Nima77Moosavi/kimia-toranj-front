@@ -38,7 +38,7 @@ const Collections = () => {
 
   return (
     <div className={styles.collections}>
-      <h2 className={styles.sectionTitle}>Collections</h2>
+      <h2 className={styles.sectionTitle}>دسته بندی محصولات</h2>
       <div className={styles.collectionList}>
         {collections.map((collection) => (
           <CollectionCard key={collection.id} collection={collection} />
