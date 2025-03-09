@@ -60,6 +60,9 @@ const CreateProduct = () => {
       productFormData.append("description", description);
       productFormData.append("collection", selectedCollection);
 
+      // Add variants to the product form data
+      productFormData.append("variants", JSON.stringify(variants));
+
       const productResponse = await axios.post(
         "http://127.0.0.1:8000/api/store/products/",
         productFormData,

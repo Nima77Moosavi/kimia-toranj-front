@@ -21,6 +21,11 @@ const AdminLayout = () => {
               مدیریت محصولات
             </Link>
           </li>
+          <li>
+            <Link to="/admin/attributes" className={styles.sidebarLink}>
+              مدیریت ویژگی‌ها
+            </Link>
+          </li>
         </ul>
       </div>
 

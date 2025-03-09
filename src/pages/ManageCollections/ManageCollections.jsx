@@ -18,17 +18,35 @@ const ManageCollections = () => {
       <Link to="/admin/collections/create" className={styles.createLink}>
         ایجاد مجموعه جدید
       </Link>
-      <ul className={styles.collectionList}>
+      <div className={styles.collectionList}>
         {collections.map((collection) => (
-          <li key={collection.id} className={styles.collectionItem}>
-            <h4>{collection.title}</h4>
-            <p>{collection.description}</p>
-            <Link to={`/admin/collections/edit/${collection.id}`} className={styles.editLink}>
-              ویرایش
-            </Link>
-          </li>
+          <div key={collection.id} className={styles.collectionItem}>
+            {/* Buttons (edit & delete) on the left */}
+            <div className={styles.buttonsContainer}>
+              <Link
+                to={`/admin/collections/edit/${collection.id}`}
+                className={styles.editButton}
+              >
+                ویرایش
+              </Link>
+              <button className={styles.deleteButton}>حذف</button>
+            </div>
+
+            {/* Collection Details (title and description) in the middle */}
+            <div className={styles.collectionDetails}>
+              <h4>{collection.title}</h4>
+              <p>{collection.description}</p>
+            </div>
+
+            {/* Image on the right */}
+            <img
+              src={collection.image || "/path/to/default-image.jpg"}
+              alt={collection.title}
+              className={styles.collectionImage}
+            />
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
