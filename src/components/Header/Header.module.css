@@ -1,20 +1,33 @@
 .header {
     width: 100%;
+<<<<<<< Updated upstream
     height: auto; /* ارتفاع خودکار */
     min-height: 455px; /* حداقل ارتفاع */
     background-color: #fff;
     padding: 10px 20px;
     position: relative;
     overflow: hidden;
+=======
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* برای قرار دادن دایره طوسی و عکس‌ها */
+    overflow: hidden; /* جلوگیری از خارج شدن دایره و عکس‌ها از محدوده header */
+>>>>>>> Stashed changes
   }
   
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< Updated upstream
     position: relative;
     z-index: 1;
     flex-wrap: wrap; /* در صورت نیاز عناصر به خط بعد بروند */
+=======
+    position: relative; /* برای قرار دادن دایره طوسی */
+    z-index: 1; /* عناصر بالای دایره و عکس‌ها قرار بگیرند */
+>>>>>>> Stashed changes
   }
   
   .icons {
@@ -23,8 +36,12 @@
     order: 1;
     font-size: 28px;
     color: #023047;
+<<<<<<< Updated upstream
     margin-left: 100px;
     margin-top: 0;
+=======
+    margin-left: 30px;
+>>>>>>> Stashed changes
     cursor: pointer;
     align-items: center;
   }
@@ -32,6 +49,7 @@
   .loginButton {
     order: 2;
     color: #023047;
+<<<<<<< Updated upstream
     margin-left: 50px;
     margin-top: -30px;
   }
@@ -39,25 +57,37 @@
   .loginButton a {
     text-decoration: none;
     color: inherit;
+=======
+    margin-left: 30px;
+>>>>>>> Stashed changes
   }
   
   .loginButton button {
     font-size: 22px;
     padding: 8px 16px;
     background-color: #fff;
+<<<<<<< Updated upstream
     color: #023047;
     border-radius: 10px;
     text-align: center;
     border: unset;
+=======
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #023047;
+>>>>>>> Stashed changes
     cursor: pointer;
     height: 40px;
     display: flex;
     align-items: center;
+<<<<<<< Updated upstream
     pointer-events: none;
   }
   
   .loginButton a {
     pointer-events: auto;
+=======
+>>>>>>> Stashed changes
   }
   
   .searchContainer {
@@ -84,7 +114,10 @@
     text-align: right;
     direction: rtl;
     font-size: 18px;
+<<<<<<< Updated upstream
     margin-top: -30px;
+=======
+>>>>>>> Stashed changes
   }
   
   .searchIcon {
@@ -104,16 +137,23 @@
   }
   
   .hamburgerMenu span {
+<<<<<<< Updated upstream
     font-size: 50px;
     cursor: pointer;
     color: #023047;
     margin-top: 10px;
+=======
+    font-size: 36px;
+    cursor: pointer;
+    color: #023047;
+>>>>>>> Stashed changes
   }
   
   /* دایره طوسی */
   .circle {
     position: absolute;
     left: -100px;
+<<<<<<< Updated upstream
     top: -250px;
     width: 700px;
     height: 700px;
@@ -121,11 +161,20 @@
     border-radius: 50%;
     z-index: 0;
     margin-bottom: 100px;
+=======
+    top: -100px;
+    width: 600px;
+    height: 600px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 50%;
+    z-index: 0; /* دایره زیر همه عناصر قرار بگیرد */
+>>>>>>> Stashed changes
   }
   
   /* عکس‌ها */
   .images {
     position: absolute;
+<<<<<<< Updated upstream
     width: 100%;
     display: flex;
     justify-content: center;
@@ -289,3 +338,20 @@
       height: 120px;
     }
   }
+=======
+    bottom: 0; /* عکس‌ها در پایین header قرار بگیرند */
+    left: 0; /* عکس‌ها از سمت چپ شروع شوند */
+    display: flex;
+    gap: 10px; /* فاصله بین عکس‌ها */
+    padding: 10px; /* فاصله از لبه‌ها */
+    z-index: 1; /* عکس‌ها بالای دایره طوسی قرار بگیرند */
+  }
+  
+  .images img {
+    width: 50px; /* عرض عکس‌ها */
+    height: 50px; /* ارتفاع عکس‌ها */
+    border-radius: 50%; /* عکس‌ها به شکل دایره نمایش داده شوند */
+    object-fit: cover; /* عکس‌ها به درستی نمایش داده شوند */
+  }
+  
+>>>>>>> Stashed changes
