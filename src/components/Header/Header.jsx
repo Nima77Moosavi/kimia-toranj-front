@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./Header.module.css";
+import logo from "../../assets/logo.png";
 import { IoMenu } from "react-icons/io5";
-import { GoHeartFill } from "react-icons/go";
+import { TiHeart } from "react-icons/ti";
 import { FaCartShopping } from "react-icons/fa6";
+<<<<<<< HEAD
 import { IoSearch } from "react-icons/io5"; // آیکن جستجو
 <<<<<<< Updated upstream
 import { Link } from "react-router-dom";
@@ -26,40 +28,29 @@ const Header = () => {
 <<<<<<< Updated upstream
       <div className={styles.container}>
         {/* آیکن‌ها */}
+=======
+import { Link } from "react-router-dom";
+
+const Header = () => {
+  return (
+    <header className={styles.header}>
+      {/* Left Section */}
+      <div className={styles.leftSection}>
+>>>>>>> parent of 575b3b8 (header changed)
         <div className={styles.icons}>
-          <span>
+          <span className={styles.icon}>
             <FaCartShopping />
           </span>
-          <span>
-          <GoHeartFill />
+          <span className={styles.icon}>
+            <TiHeart />
           </span>
         </div>
-
-        {/* دکمه ورود/ثبت نام */}
-        <div className={styles.loginButton}>
-          <Link to="/login">
-            <button>ورود | ثبت نام</button>
-          </Link>
-        </div>
-
-        {/* جعبه جستجو */}
-        <div className={styles.searchContainer}>
-          <div className={styles.searchBox}>
-            <input type="text" placeholder="جستجو کنید..." />
-            <span className={styles.searchIcon}>
-              <IoSearch />
-            </span>
-          </div>
-        </div>
-
-        {/* منوی همبرگر */}
-        <div className={styles.hamburgerMenu}>
-          <span>
-            <IoMenu />
-          </span>
-        </div>
+        <Link to="/login">
+          <button className={styles.button}>ورود | ثبت نام</button>
+        </Link>
       </div>
 
+<<<<<<< HEAD
       {/* عکس‌ها */}
       <div className={styles.images}>
         <img src={image3} alt="Image 3" className={styles.dast} />
@@ -105,6 +96,22 @@ const Header = () => {
           </span>
         </div>
 >>>>>>> Stashed changes
+=======
+      {/* Middle Logo */}
+      <div className={styles.brand}>
+        <img src={logo} alt="Logo" className={styles.logo} />
+        <h1>برند شما</h1>
+      </div>
+
+      {/* Right Section */}
+      <div className={styles.rightSection}>
+        <div className={styles.searchBox}>
+          <input type="text" placeholder="جستجو کنید..." />
+        </div>
+        <div className={styles.hamburgerMenu}>
+          <IoMenu />
+        </div>
+>>>>>>> parent of 575b3b8 (header changed)
       </div>
     </header>
   );
