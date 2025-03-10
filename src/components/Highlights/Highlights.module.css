@@ -4,12 +4,15 @@
   white-space: nowrap; /* Prevent wrapping of items */
   padding: 16px 0; /* Add some padding */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile devices */
+  scroll-behavior: smooth; /* اضافه کردن این خط */
+  scroll-snap-type: x mandatory; /* اختیاری: برای اسکرول دقیق‌تر */
 }
 
 .highlights {
   display: inline-flex; /* Display highlights in a row */
   gap: 16px; /* Space between highlight cards */
   padding: 0 16px; /* Add padding to the sides */
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Optional: Hide scrollbar for a cleaner look */
@@ -46,3 +49,9 @@
 .scrollButton:hover {
   background: rgba(255, 255, 255, 1);
 }
+
+
+
+
+
+
