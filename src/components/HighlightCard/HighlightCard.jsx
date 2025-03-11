@@ -13,6 +13,7 @@ const HighlightCard = ({ highlight }) => {
             className={styles.image}
           />
         </div>
+        {/* C */}
         <h3 className={styles.title}>{highlight.title}</h3>
         {/* <small className={styles.date}>{highlight.created_at}</small> */}
       </div>
