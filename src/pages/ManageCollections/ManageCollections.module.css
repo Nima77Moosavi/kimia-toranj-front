@@ -4,29 +4,89 @@
 }
 
 .createLink {
-  display: block;
+  display: inline-block;
   margin: 20px 0;
   font-size: 16px;
-  color: #4caf50;
+  color: #fff;
+  background-color: #4caf50;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.createLink:hover {
+  background-color: #388e3c;
 }
 
 .collectionList {
-  list-style-type: none;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
 }
 
 .collectionItem {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
-.editLink {
-  color: #2196f3;
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 20px; /* Space between the buttons and the center content */
+}
+
+.editButton,
+.deleteButton {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.editLink:hover {
-  text-decoration: underline;
+.editButton:hover,
+.deleteButton:hover {
+  background-color: #1976d2;
+}
+
+.collectionDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Take up available space */
+  text-align: center;
+}
+
+.collectionDetails h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.collectionDetails p {
+  font-size: 14px;
+  color: #555;
+}
+
+.collectionImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
 }

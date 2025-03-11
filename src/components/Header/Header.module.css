@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Neirizi";
+  src: local("Neirizi"), url(./fonts/Neirizi.ttf) format("truetype");
+}
+
 .header {
     width: 100%;
     height: auto; /* ارتفاع خودکار */

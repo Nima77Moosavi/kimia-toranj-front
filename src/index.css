@@ -1,10 +1,11 @@
 @font-face {
-  font-family: 'B-NAZANIN';
-  src: local('B-NAZANIN'), url(./fonts/B-NAZANIN.ttf) format('truetype');
+  font-family: 'Neirizi';
+  src: local('Neirizi'), url(./fonts/Neirizi.ttf) format('truetype');
 }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "B-NAZANIN";
+  direction: rtl;
+  font-family: "Neirizi";
 }

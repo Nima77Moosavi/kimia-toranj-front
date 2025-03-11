@@ -13,6 +13,7 @@ import CreateCollection from "./pages/CreateCollection/CreateCollection";
 import ManageProducts from "./pages/ManageProducts/ManageProducts";
 import CreateProduct from "./pages/CreateProduct/CreateProduct";
 import AdminLayout from "./pages/AdminDashboard/AdminLayout/AdminLayout";
+import ManageAttributes from "./pages/AdminDashboard/ManageAttributes/ManageAttributes";
 
 const App = () => {
   return (
@@ -51,6 +52,7 @@ const App = () => {
                 path="/admin/products/create/"
                 element={<CreateProduct />}
               />
+              <Route path="/admin/attributes" element={<ManageAttributes />} />
             </Route>
           </Route>
         </Route>
